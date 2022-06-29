@@ -29,9 +29,9 @@ public class RestTemplateConfig {
         SimpleClientHttpRequestFactory factory = new SimpleClientHttpRequestFactory();
         factory.setReadTimeout(5000);
         factory.setConnectTimeout(5000);
-        SocketAddress address = new InetSocketAddress("127.0.0.1", 8889);
-        Proxy proxy = new Proxy(Proxy.Type.HTTP, address);
-        factory.setProxy(proxy);
+//        SocketAddress address = new InetSocketAddress("127.0.0.1", 8889);
+//        Proxy proxy = new Proxy(Proxy.Type.HTTP, address);
+//        factory.setProxy(proxy);
         return factory;
     }
 }
